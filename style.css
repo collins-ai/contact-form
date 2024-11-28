@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "karla";
+    src: url(assets/fonts/Karla-Italic-VariableFont_wght.ttf);
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.4rem;
+    font-family: "karla";
+    background: hsl(148, 38%, 91%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 72rem;
+    padding: 1.8rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        width: 32rem;
+    }
+}
+.container1 {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+.container11 {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+.container2 {
+    display: flex;
+    gap: 1rem;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+.one, .two, .three {
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 6px;
+    padding: .4rem;
+}
+.one:hover, .two:hover, .three:hover {
+    cursor: pointer;
+}
+.one:focus, .three:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+.one {
+    width: 100%;
+}
+.two {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+.two:has(input:checked) {
+    background: hsl(148, 38%, 91%);
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+.three {
+    width: 100%;
+    padding-bottom: 3rem;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 8rem;
+    }
+}
+.submit {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+}
+.submit:hover {
+    cursor: pointer;
+    background:  hsl(155, 51%, 12%);
+}
+.error {
+    display: none;
+    color: hsl(0, 66%, 54%);
+    font-size: 1.4rem;
+}
+.hide {
+    background: hsl(187, 24%, 22%);
+    padding: 1.2rem;
+    border-radius: 6px;
+    max-width: 34.2rem;
+    position: absolute;
+    top: -6.5rem;
+    left: 19rem;
+    display: none;
+    @media screen and (max-width: 768px) {
+        max-width: 28rem;
+        left: 2rem;
+    }
+}
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(24, 100%, 50%);
+}

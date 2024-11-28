@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- CSS files links -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <!-- JavaScript file link -->
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <header></header>
+
+  <main>
+    <form action="" novalidate>
+      <h1 style="margin-bottom: 1rem;">Contact Us</h1>
+      <div class="container1">
+        <div class="container11">
+          <label for="firstname" style="display: block; margin-bottom: .5rem;">First Name *</label>
+          <input type="text" name="firstname" id="firstname" class="one" aria-describedby="firstnameError">
+          <p id="firstnameError" class="error">This field is required</p>
+        </div>
+        <div class="container11">
+          <label for="lastname" style="display: block; margin-bottom: .5rem;">Last Name *</label>
+          <input type="text" name="lastname" id="lastname" class="one" aria-describedby="lastnameError">
+          <p id="lastnameError" class="error">This field is required</p>
+        </div>
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <label for="email" style="display: block; margin-bottom: .5rem;">Email Address *</label>
+        <input type="email" name="email" id="email" class="one" aria-describedby="emailError">
+        <p id="emailError" class="error">Please enter a valid email address</p>
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <p style="margin-bottom: .5rem;">Query Type *</p>
+        <div class="container2">
+          <div class="two">
+            <input type="radio" name="query" id="general" aria-describedby="queryError">
+            <label for="general">General Enquiry</label>
+          </div>
+          <div class="two">
+            <input type="radio" name="query" id="support" aria-describedby="queryError">
+            <label for="support">Support Request</label>
+          </div>
+        </div>
+        <p id="queryError" class="error">Please select a query type</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <label for="message" style="display: block; margin-bottom: .5rem;">Message *</label>
+        <textarea name="message" id="message" class="three" aria-describedby="messageError"></textarea>
+        <p id="messageError" class="error">This field is required</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <input type="checkbox" name="check" id="check" aria-describedby="checkError">
+        <label for="check">I consent to being contacted by the team *</label>
+        <p id="checkError" class="error">To submit this form, please consent to being contacted</p>
+      </div>
+      <input type="submit" value="Submit" class="submit">
+    </form>
+    <div class="hide" id="success">
+      <p style="display: flex; align-items: center; margin-bottom: .5rem;">
+        <img src="assets/images/icon-success-check.svg" style="margin-right: .5rem;" alt="">
+        <span style="color: hsl(0, 0%, 100%);">Message Sent!</span>
+      </p>
+      <p style="font-size: 1.4rem; color: hsl(186, 15%, 59%);">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/collins-ai">Sunday Collins</a>.
+    </div>
+  </footer>
+</body>
+</html>
